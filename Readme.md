@@ -30,7 +30,7 @@ This repo contains all the files needed to setup neovim properly with all the sh
 | \<leader>b    | Move to arbitrary buffer, while showing a list | 
 | \<C-J>           | Move to next buffer |
 | \<C-K>           | Move to next buffer | 
-| \<leader>q       | Close buffer without exiting vim | 
+| q       | Close buffer without exiting vim | 
 
 
 ### Nerdtree shortcuts (only available inside the nerdtree)
