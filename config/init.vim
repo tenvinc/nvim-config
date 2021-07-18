@@ -20,6 +20,8 @@ Plug 'tpope/vim-commentary' " comment out lines with gcc, targets with gc
 Plug 'tpope/vim-surround' " change surroundings, tags, quotes, brackets you name it
 Plug 'vim-airline/vim-airline' " status line aesthetics
 Plug 'vim-airline/vim-airline-themes'
+
+Plug 'tpope/vim-fugitive'
 " Themes
 Plug 'joshdick/onedark.vim'
 
@@ -29,13 +31,20 @@ call plug#end()
 set number
 set relativenumber
 set expandtab
-set tabstop=2
+set tabstop=4
+set softtabstop=4   " Sets the number of columns for a TAB
 
 " Shortcuts for tab manipulation
 nnoremap tk :tabr<cr>
 nnoremap tj :tabl<cr>
 nnoremap th :tabp<cr>
 nnoremap tl :tabn<cr>
+
+" Shortcuts for buffer manipulation
+nnoremap <leader>b :ls<CR>:b<Space>
+map <C-J> :bnext<CR>
+map <C-K> :bprev<CR>
+nnoremap <leader>q :bp<cr>:bd #<cr>
 
 " Highlight extra white space
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -46,7 +55,7 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 au BufWinLeave * call clearmatches()
 
 " Custom shortcuts
-let mapleader = ","
+let mapleader = ";"
 
 inoremap jk <esc>
 inoremap kj <esc>
