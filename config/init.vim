@@ -44,7 +44,7 @@ nnoremap tl :tabn<cr>
 nnoremap <leader>b :ls<CR>:b<Space>
 map <C-J> :bnext<CR>
 map <C-K> :bprev<CR>
-nnoremap <leader>q :bp<cr>:bd #<cr>
+nnoremap q :bp<cr>:bd #<cr>
 
 " Highlight extra white space
 highlight ExtraWhitespace ctermbg=red guibg=red
