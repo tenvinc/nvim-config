@@ -68,3 +68,6 @@ This repo contains all the files needed to setup neovim properly with all the sh
 | cs | Change surroundings | 
 | ds | Remove surroundings |
 | ys | Add surroundings |
+
+### Setup remote filesystem with sshfs
+`sudo sshfs -o allow_other,default_permissions user@hostname:path/to/folder/ /mount/point`
