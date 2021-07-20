@@ -76,6 +76,7 @@ augroup nerdtree_open
 	autocmd VimEnter * NERDTree | wincmd p
 augroup END
 
+let g:NERDTreeGitStatusPorcelainVersion = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 nnoremap <leader>v :NERDTreeFind<CR>
